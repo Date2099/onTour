@@ -1,0 +1,146 @@
+{% load static %} }
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnTour - Viajes para colegios</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+ 
+    body {
+      background-color: #f8f9fa; 
+    }
+
+    .navbar {
+      background-color: #007bff; 
+    }
+
+    .navbar .navbar-brand {
+      color: #ffffff; 
+    }
+
+    .navbar .nav-link {
+      color: #ffffff; 
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .footer {
+      background-color: #0062cc; 
+      color: #ffffff; 
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .destination-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .destination-caption {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">OnTour</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Iniciar sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro.html"> Registrarse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ver tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Seguros</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Bienvenido a OnTour</h1>
+    <p>Descubre nuestros increíbles viajes diseñados especialmente para colegios.</p>
+
+    <!-- Imágenes de destinos turísticos -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'imagenes/a_corcovad-a.jpg' %}" alt="Destino 1" class="destination-image">
+          <div class="card-body">
+            <h5 class="card-title">Destino 1</h5>
+            <p class="card-text">Descripción del destino 1.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'imagenes/a_Machu-Picch-a.jpg' %}" alt="Destino 2" class="destination-image">
+          <div class="card-body">
+            <h5 class="card-title">Destino 2</h5>
+            <p class="card-text">Descripción del destino 2.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'imagenes/viaje-a-egipto-el-cairo-y-crucero-por-el-nilo-al-mejor-precio.jpg' %}" alt="Destino 3" class="destination-image">
+          <div class="card-body">
+            <h5 class="card-title">Destino 3</h5>
+            <p class="card-text">Descripción del destino 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- en estas cartas no poner imagenes solo texto -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Destino 4</h5>
+            <p class="card-text">Descripción del destino 4.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Destino 5</h5>
+            <p class="card-text">Descripción del destino 5.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Destino 6</h5>
+            <p class="card-text">Descripción del destino 6.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Todos los derechos reservados &copy; 2023 OnTour</p>
+    </div>
+  </footer>
+
+</body>
+</html>
